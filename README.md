@@ -110,7 +110,8 @@ Aby Nginx poprawnie obsługiwał pliki PHP, dodano konfigurację przekierowując
 
 ### D. html/index.php
 Dodatkowy skrypt służący do weryfikacji konfiguracji PHP oraz potwierdzenia komunikacji między kontenerami w sieci backend (pomiędzy usługą PHP a usługą MySQL).
-<img width="1363" height="1353" alt="image" src="https://github.com/user-attachments/assets/607f4cb2-d10f-493d-9885-038cb0553eae" />
+<img width="1354" height="711" alt="image" src="https://github.com/user-attachments/assets/bdc9c6e5-8e92-4720-abc3-f6e7920e3df4" />
+
 
 
 ## 2. Uruchomienie środowiska za pomocą Merge
