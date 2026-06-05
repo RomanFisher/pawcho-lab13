@@ -106,7 +106,7 @@ secrets:
 ### C. nginx.conf
 <img width="1080" height="363" alt="image" src="https://github.com/user-attachments/assets/c226e4bd-bf75-41ad-9f77-2632d8100dbb" />
 Aby Nginx poprawnie obsługiwał pliki PHP, dodano konfigurację przekierowującą zapytania *.php do kontenera php na port 9000.
-````
+```nginx
 server {
     listen 80;
     server_name localhost;
@@ -124,7 +124,7 @@ server {
         include fastcgi_params;
     }
 }
-````
+```
 ### D. html/index.php
 Dodatkowy skrypt służący do weryfikacji konfiguracji PHP oraz potwierdzenia komunikacji między kontenerami w sieci backend (pomiędzy usługą PHP a usługą MySQL).
 <img width="1363" height="1353" alt="image" src="https://github.com/user-attachments/assets/607f4cb2-d10f-493d-9885-038cb0553eae" />
