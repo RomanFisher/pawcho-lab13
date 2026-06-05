@@ -104,7 +104,8 @@ secrets:
     file: ./db_password.txt
 ```
 ### C. nginx.conf
-<img width="1080" height="363" alt="image" src="https://github.com/user-attachments/assets/c226e4bd-bf75-41ad-9f77-2632d8100dbb" />
+<img width="1189" height="355" alt="image" src="https://github.com/user-attachments/assets/0b587e48-44ff-42e3-8c2b-d08e1471e3b2" />
+
 Aby Nginx poprawnie obsługiwał pliki PHP, dodano konfigurację przekierowującą zapytania *.php do kontenera php na port 9000.
 
 ### D. html/index.php
