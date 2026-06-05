@@ -70,6 +70,7 @@ networks:
 ### B. Plik środowiskowy / nadpisujący (`docker-compose.ci.yml`)
 <img width="1065" height="751" alt="image" src="https://github.com/user-attachments/assets/59b5d705-c212-44e4-a041-d410b992917a" />
 Zawiera konfigurację specyficzną dla danego wdrożenia (mapowanie portów oraz wstrzykiwanie bezpiecznych plików Secrets zamiast haseł w czystym tekście).
+
 ```
 services:
   nginx:
