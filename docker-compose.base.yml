@@ -1,0 +1,38 @@
+services:
+  nginx:
+    image: nginx:alpine
+    container_name: lemp_nginx
+    volumes:
+      - ./html:/var/www/html
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf
+    networks:
+      - frontend
+      - backend
+    depends_on:
+      - php
+
+  php:
+    image: php:8.2-fpm-alpine
+    container_name: lemp_php
+    volumes:
+      - ./html:/var/www/html
+    networks:
+      - backend
+
+  mysql:
+    image: mysql:8.0
+    container_name: lemp_mysql
+    networks:
+      - backend
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin:5.2
+    container_name: lemp_phpmyadmin
+    networks:
+      - backend
+
+networks:
+  frontend:
+    driver: bridge
+  backend:
+    driver: bridge
