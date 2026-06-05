@@ -128,6 +128,7 @@ server {
 ### D. html/index.php
 Dodatkowy skrypt służący do weryfikacji konfiguracji PHP oraz potwierdzenia komunikacji między kontenerami w sieci backend (pomiędzy usługą PHP a usługą MySQL).
 ```
+
 <?php
 echo "<div style='font-family: Arial, sans-serif; max-width: 800px; margin: 20px auto; padding: 20px; border: 1px solid #ccc; border-radius: 10px; background-color: #f9f9f9;'>";
 echo "<h1 style='color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px;'>Laboratorium 13 - LEMP Stack</h1>";
@@ -161,7 +162,9 @@ if ($fp) {
 echo "</div><hr>";
 phpinfo();
 ?>
+
 ```
+
 ## 2. Uruchomienie środowiska za pomocą Merge
 <img width="777" height="146" alt="image" src="https://github.com/user-attachments/assets/707d608a-34a9-4011-8d86-459c7fb21e3a" />
 
